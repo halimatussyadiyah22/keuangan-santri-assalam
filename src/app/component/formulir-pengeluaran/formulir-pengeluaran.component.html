@@ -1,0 +1,68 @@
+<div>
+  <div class="field">
+    <div class="field">
+      <label for="nama">Nama</label>
+      <input
+        id="nama"
+        pInputText
+        placeholder="Masukan nama"
+        type="text"
+        class="w-full mb-3"
+      >
+    </div>
+
+    <div class="field">
+      <label for="tanggal">tanggal</label>
+      <input
+        id="tanggal"
+        pInputText
+        type="date"
+        class="w-full mb-3"
+      >
+    </div>
+
+    <div class="field">
+      <label for="jumlah">Jumlah</label>
+      <input
+        id="jumlah"
+        pInputText
+        placeholder="0000000"
+        type="number"
+        class="w-full mb-3"
+      >
+    </div>
+
+    <div class="field">
+      <label for="bukti">Bukti</label>
+      <input
+        id="bukti"
+        pInputText
+        type="file"
+        class="w-full mb-3"
+        (change)="onFileSelected($event)"
+      >
+    </div>
+    <div>
+      <label>Keterangan</label>
+      <form [formGroup]="formGroup">
+        <textarea rows="5" cols="30" pInputTextarea formControlName="text"></textarea>
+      </form>
+    </div>
+
+
+
+  </div>
+  <div>
+    <button
+      pButton
+      label="Tambah"
+      class="w-full"
+    ></button>
+    <button
+      pButton
+      label="Batal"
+      class="w-full p-button-outlined p-button-danger mt-2"
+    ></button>
+  </div>
+
+</div>

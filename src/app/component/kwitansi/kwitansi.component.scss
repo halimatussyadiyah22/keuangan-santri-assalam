@@ -1,0 +1,75 @@
+.main-container {
+  background-color: #E7E7E7;
+  height: 100%;
+}
+.dashboard{
+  background-image: url("/assets/picture/monitor(white).png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 100px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+
+}
+.custom-button {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+}
+
+.jarak {
+  margin-right: 45px;
+  margin-top: 30px;
+}
+.data{
+  background-image: url("/assets/picture/folder.png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 100px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+
+}
+.validasi{
+  background-image: url("/assets/picture/validasi.png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 100px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+
+}
+.kwitansi{
+  background-image: url("/assets/picture/kwitansi.png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 100px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+
+}
+.dropdown {
+  display: none;
+}
+
+.menu-btn:focus + .dropdown {
+  display: block;
+}
+p {
+  font-size: 0.79vw;
+  font-weight: bold;
+}
+@media screen and (max-width: 1000px) {
+  .hidden-column {
+    display: none;
+  }
+}

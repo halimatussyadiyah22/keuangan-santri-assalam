@@ -1,0 +1,68 @@
+<div class="m-auto flex justify-content-center">
+    <div class="col-20 flex flex-column-reverse justify-content-center align-items-center bg_login">
+      <div class="m-auto ">
+        <div class="text-center border-bottom-3 my-8" style="border-bottom-color: #5B8A24">
+          <h1>Log In</h1>
+        </div>
+
+        <div class="text-center">
+          <p-message
+            *ngIf="errorMsg"
+            severity="error"
+            [text]="errorMsg"
+            styleClass="m-auto"
+          ></p-message>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input
+            [(ngModel)]="authenticationRequest.username"
+            id="email"
+            pInputText
+            placeholder="insert your email"
+            type="email"
+            class="w-full mb-3"
+            style="background-color:#B8D6B4;"
+          >
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <input
+            [(ngModel)]="authenticationRequest.password"
+            id="password"
+            pInputText
+            placeholder="Password"
+            type="password"
+            class="w-full mb-3"
+            style="background-color:#B8D6B4;"
+
+          >
+        </div>
+
+        <button
+          pButton
+          label="Login"
+          class="w-full"
+          (click)="login()"
+          style="background-color: #5B8A24"
+        ></button>
+        <button
+          pButton
+          label="belum punya akun?"
+          class="w-full p-button-link mt-6"
+          (click)="register()"
+        ></button>
+        <button
+          pButton
+          label="lupa password?"
+          class="w-full p-button-link mb-3"
+          (click)="register()"
+        ></button>
+
+      </div>
+  </div>
+</div>
+  <div class="flex-auto rgb" id="background-div"  >
+</div>

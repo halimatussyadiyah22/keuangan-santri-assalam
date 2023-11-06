@@ -1,0 +1,97 @@
+.main-container {
+  background-color: #E7E7E7;
+  height: 100%;
+}
+.dashboard{
+  background-image: url("/assets/picture/monitor(white).png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+}
+.custom-button {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+}
+hvr{
+  background-color: transparent;
+  padding: 20px 20px;
+  position: relative;
+  overflow: hidden;
+}
+.hvr:hover{
+  background-color: rgba(199, 211, 195, 0.42);;
+  transform: scale(1.0);
+}
+.hvr:active{
+  background-color: #C7D3C3;
+
+}
+
+.jarak {
+  margin-right: 45px;
+  margin-top: 55px;
+}
+.data{
+  background-image: url("/assets/picture/folder.png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+
+}
+.validasi{
+  background-image: url("/assets/picture/validasi.png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+
+}
+.kwitansi{
+  background-image: url("/assets/picture/kwitansi.png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 100px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+}
+.dropdown {
+  display: none;
+}
+
+.menu-btn:focus + .dropdown {
+  display: block;
+}
+p {
+  font-size: 0.79vw;
+  font-weight: bold;
+}
+@media screen and (max-width: 1000px) {
+  .hidden-column {
+    display: none;
+  }
+}
+.Role{
+  background-image: url("/assets/picture/user.png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+}

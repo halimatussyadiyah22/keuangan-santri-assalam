@@ -1,0 +1,47 @@
+//belum yang gradienya
+
+
+#background-div{
+  background-color: #C7D3C3;
+  height: 100%;
+  position: sticky;
+}
+.image-container{
+  width: 700px;
+  height: 550px;
+  position: absolute;
+  top: 1%;
+  right: 0.5%;
+}
+.pict{
+  height: 20vh;
+  width: 30vh;
+  top: 15%;
+  right: 70%;
+  left: 10%;
+  position: absolute;
+
+}
+
+.buttonsu{
+  position: absolute;
+  left: 15%;
+  top: 60%;
+}
+.buttonlo{
+  position: absolute;
+  left: 15%;
+}
+.image2{
+  height: 50vh;
+  width: 50vh;
+  top: 40%;
+  right: 0%;
+  position: absolute;
+  border-top: 20px solid #C7D3C3;
+  border-left: 20px solid #C7D3C3;
+}
+a{
+  border-image-outset: 40vh;
+}
+

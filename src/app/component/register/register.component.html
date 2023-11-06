@@ -1,0 +1,94 @@
+<div class="m-auto  flex justify-content-center">
+  <div class="col-20 flex flex-column-reverse justify-content-center align-items-center bg_login ">
+    <div class="m-auto ">
+      <div class=" text-center border-bottom-3 m-auto" style="border-bottom-color: #5B8A24">
+        <h1>Sign Up</h1>
+      </div>
+
+      <div class="text-center">
+        <p-message
+          *ngIf="errorMsg"
+          severity="error"
+          [text]="errorMsg"
+          styleClass="m-auto"
+        ></p-message>
+      </div>
+
+      <div class="field mt-3">
+        <label for="Nama">Nama</label>
+        <input
+          [(ngModel)]="customer.name"
+          id="Nama"
+          pInputText
+          placeholder="masukan name"
+          type="email"
+          class="w-full mb-3 "
+          style="background-color:#B8D6B4;"
+        >
+      </div>
+
+      <div class="field">
+        <label for="Email">Email</label>
+        <input
+          [(ngModel)]="customer.email"
+          id="Email"
+          pInputText
+          placeholder="masukan email"
+          type="email"
+          class="w-full mb-3"
+          style="background-color:#B8D6B4;"
+
+        >
+      </div>
+
+      <div class="field">
+        <label for="Gender">Level</label>
+        <select
+          [(ngModel)]="customer.level"
+          id="Gender"
+          class="p-dropdown w-full mb-3 custom-select"
+          placeholder="Select an Option"
+          style="background-color:#B8D6B4;"
+
+
+        >
+          <option value="MALE">MALE</option>
+          <option value="FEMALE">FEMALE</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <input
+          [(ngModel)]="customer.password"
+          id="password"
+          pInputText
+          placeholder="Password"
+          type="password"
+          class="w-full mb-3"
+          style="background-color:#B8D6B4;"
+
+        >
+      </div>
+
+      <button
+        pButton
+        label="Create an users"
+        class=" w-full "
+        style="background-color:#5B8A24;"
+        (click)="createAccount()"
+      ></button>
+
+      <button
+        pButton
+        label="Have an users? Login now. "
+        class="w-full p-button-link text-center p-0 mt-6 mb-6 "
+        (click)="login()"
+      ></button>
+
+    </div>
+  </div>
+</div>
+<div class="flex-auto rgb" id="background-div"  >
+</div>
+

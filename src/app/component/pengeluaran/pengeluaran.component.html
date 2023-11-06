@@ -1,0 +1,50 @@
+<div class="flex" style="height: 100vh;">
+  <div class="flex overflow-hidden flex-column align-items-stretch  border-right-1 col-2 border-gray-200"
+       style="background-color: #90ABAB"
+  >
+
+    <app-menu-item></app-menu-item>
+  </div>
+  <div class="flex flex-column flex-grow-1 " style="background-color: #718787">
+    <div class="flex flex-column align-items-end border-bottom-1 border-gray-200 pt-3 pb-3">
+      <div class="flex flex-row align-items-center ">
+        <button
+          pButton
+          pRipple
+          type="button"
+          icon="pi pi-bell"
+          class="p-button-rounded p-button-secondary p-button-text mr-3"
+        ></button>
+
+        <p-avatar
+          image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
+          size="normal"
+          shape="circle"
+          class="mr-2"
+        ></p-avatar>
+
+        <div>
+          <p class="text-base mb-0 mt-1 text-gray-700"> halimah@.com</p>
+          <p class="text-sm mb-1 mt-0 text-gray-500"> Admin </p>
+        </div>
+
+        <div>
+          <button
+            pButton
+            pRipple
+            type="button"
+            icon="pi pi-angle-down"
+            class="p-button-secondary p-button-text"
+          ></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-container p-3">
+      create customer
+      <div>
+        <app-chart></app-chart>
+      </div>
+    </div>
+  </div>
+</div>

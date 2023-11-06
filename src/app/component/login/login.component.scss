@@ -1,0 +1,36 @@
+#background-div{
+  background-image: url("/assets/picture/assalaam.jpg");
+  background-size: cover;
+  position: relative;
+  background-repeat: round;
+  z-index: -2;
+  height: 100vh;
+  filter: blur(2px);
+
+
+}
+#nonblur{
+  position: relative;
+  z-index: 1;
+
+}
+.bg_login{
+  background-color: rgb(255,255,255,70%) ;
+  opacity: 20;
+  z-index: 2;
+  position : fixed;
+  top: 20%;
+  border-radius : 2%;
+  box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.5);
+  width: 700px;
+}
+.blur{
+  filter:blur(1px);
+}
+.pict{
+  object-fit: scale-down;
+  height: auto;
+  max-width: 100%;
+}
+
+

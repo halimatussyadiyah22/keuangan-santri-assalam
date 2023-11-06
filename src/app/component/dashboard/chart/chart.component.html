@@ -1,0 +1,32 @@
+<div class="chart flex-wrap border-1 col-fixed" style="background-color: white; position: relative; left: 30%; top: 10%">
+  <div class="flex flex-column border-bottom-1 align-items-end">
+    <p-tabMenu [model]="items"></p-tabMenu>
+  </div>
+  <select [(ngModel)]="selectedOption" (change)="onSelectChange()" class=" flex w-2 align-content-end mt-3" name="colors">
+    <option value="bulan" class="text-center">Bulan</option>
+    <option value="tahun" class="text-center">Tahun</option>
+  </select>
+
+  <div class="flex flex-column  border-2 align-content-end m-7" style="position: relative;">
+<div class="card col-fixed col-8 w-full" style="position: relative">
+  <p-chart [data]="data" [options]="options" type="bar"></p-chart>
+</div>
+</div>
+
+</div>
+<div class="chart flex-wrap border-1 col-fixed mt-3" style="background-color: white; position: relative; left: 30%; top: 10%">
+  <div class="flex flex-column border-bottom-1 align-items-end">
+    <p-tabMenu [model]="items"></p-tabMenu>
+  </div>
+  <select [(ngModel)]="selected" (change)="barchart()" class=" flex w-2 align-content-end mt-3">
+    <option value="bulan_bar" class="text-center">Bulan</option>
+    <option value="tahun_bar" class="text-center">Tahun</option>
+  </select>
+
+  <div class="flex flex-column  border-2 align-content-end m-7" style="position: relative;">
+    <div class="card col-fixed col-8 w-full" style="position: relative">
+      <p-chart [data]="bar" [options]="optionbar" type="bar"></p-chart>
+    </div>
+  </div>
+
+</div>
